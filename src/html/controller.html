@@ -1,0 +1,65 @@
+<!DOCTYPE html>
+<html lang="en">
+   <head>
+      <meta charset="UTF-8" />
+      <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+      <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+      <link
+         href="https://fonts.googleapis.com/icon?family=Material+Icons|Material+Icons+Round"
+         rel="stylesheet"
+      />
+      <link rel="stylesheet" href="../css/style.css" />
+   </head>
+   <body>
+      <div class="evc-controller" aria-controls="Video">
+         <button
+            class="evc-controller__button"
+            id="env-play-btn"
+            aria-label="Play button"
+         >
+            <!-- <span class="material-icons-round"> pause </span> -->
+            <span class="material-icons-round"> play_arrow </span>
+         </button>
+         <button
+            class="evc-controller__button"
+            id="env-mute-btn"
+            aria-label="Mute button"
+         >
+            <span class="material-icons-round"> volume_up </span>
+            <!-- <span class="material-icons-round"> volume_down </span> -->
+            <!-- <span class="material-icons-round"> volume_mute </span> -->
+            <!-- <span class="material-icons-round"> volume_off </span> -->
+         </button>
+         <div
+            class="evc-controller-slider evc-controller-slider_hidden"
+            id="evc-volume-slider"
+         >
+            <!-- Slidders have hidden modifier -->
+            <div class="evc-controller-slider__inner">
+               <div class="evc-controller-slider__filler"></div>
+            </div>
+            <div class="evc-controller-slider__pointer"></div>
+         </div>
+         <button class="evc-controller__button" id="env-speed-btn">
+            <span class="material-icons-round"> speed </span>
+         </button>
+         <div
+            class="evc-controller-slider evc-controller-slider_hidden"
+            id="evc-speed-slider"
+            aria-label="Playback speed slider"
+         >
+            <div class="evc-controller-slider__inner">
+               <div class="evc-controller-slider__filler"></div>
+            </div>
+            <div class="evc-controller-slider__pointer"></div>
+         </div>
+         <button class="evc-controller__button" id="env-pip-btn">
+            <span class="material-icons-round"> picture_in_picture </span>
+         </button>
+         <button class="evc-controller__button" id="env-fullscreen-btn">
+            <span class="material-icons-round"> fullscreen </span>
+         </button>
+      </div>
+      <script src="../js/controller.js"></script>
+   </body>
+</html>

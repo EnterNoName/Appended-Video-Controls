@@ -1,0 +1,21 @@
+{
+   "name": "Extended Video Controls",
+   "description": "This allows you to control speed, volume, picture-in-picture mode as well as fullscreen mode in one place. No more need to worry if on-page player doesn't have one of the video controls.",
+   "version": "0.0.2",
+   "manifest_version": 2,
+   "icons": {
+      "16": "./src/images/logo-16.png",
+      "32": "./src/images/logo-32.png",
+      "48": "./src/images/logo-48.png",
+      "128": "./src/images/logo-128.png"
+   },
+   "background": {
+      "scripts": ["./background.js"]
+   },
+   "options_page": "./options.html",
+   "browser_action": {
+      "default_popup": "./popup.html"
+   },
+   "web_accessible_resources": ["/src/html/controller.html"],
+   "permissions": ["tabs", "https://*/*", "http://*/*"]
+}
